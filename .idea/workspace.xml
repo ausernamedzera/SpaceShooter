@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="09dbfef5-a6b9-4b8f-9772-5ea31e5c2c81" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/SpaceShooter.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/objects/enemies.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/objects/game.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/objects/player.py" afterDir="false" />
-    </list>
+    <list default="true" id="09dbfef5-a6b9-4b8f-9772-5ea31e5c2c81" name="Changes" comment="files" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,6 +17,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/ausernamedzera/SpaceShooter.git",
+    "accountId": "843bf6d0-3ab7-4cf4-81d2-dbddaa357023"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 7,
   "fromUser": false
@@ -40,6 +36,7 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master"
   }
@@ -64,6 +61,63 @@
       <option name="presentableId" value="Default" />
       <updated>1779395782844</updated>
     </task>
+    <task id="LOCAL-00001" summary="class_player_created">
+      <option name="closed" value="true" />
+      <created>1779396586148</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1779396586148</updated>
+    </task>
+    <task id="LOCAL-00002" summary="class_enemies_created">
+      <option name="closed" value="true" />
+      <created>1779396610575</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1779396610575</updated>
+    </task>
+    <task id="LOCAL-00003" summary="class_game_created">
+      <option name="closed" value="true" />
+      <created>1779396621588</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1779396621588</updated>
+    </task>
+    <task id="LOCAL-00004" summary="main_classes_are_imported">
+      <option name="closed" value="true" />
+      <created>1779396684230</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1779396684230</updated>
+    </task>
+    <task id="LOCAL-00005" summary="class_game_created">
+      <option name="closed" value="true" />
+      <created>1779396698778</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1779396698778</updated>
+    </task>
+    <task id="LOCAL-00006" summary="files">
+      <option name="closed" value="true" />
+      <created>1779396749904</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1779396749904</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="class_player_created" />
+    <MESSAGE value="class_enemies_created" />
+    <MESSAGE value="main_classes_are_imported" />
+    <MESSAGE value="class_game_created" />
+    <MESSAGE value="files" />
+    <option name="LAST_COMMIT_MESSAGE" value="files" />
   </component>
 </project>
