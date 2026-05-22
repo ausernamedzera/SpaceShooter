@@ -1,4 +1,4 @@
-import arcade
+import arcade #everynew window, we need to install again using "pip install arcade --no-deps"
 
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
