@@ -8,15 +8,20 @@ class Player:
         self.player_x = SCREEN_WIDTH / 2
         self.player_y = 50
         self.player_speed = 0
+        self.bullets = []
 
     def on_draw(self):
         arcade.draw_circle_filled(self.player_x, self.player_y, 20, arcade.color.PURPLE_HEART)
+        for bullet in self.bullets:
+            bullet.draw()
 
     def on_key_press(self, key, modifiers):
         if key == arcade.key.LEFT:
             self.player_speed = -5
         if key == arcade.key.RIGHT: #written with elif, I'll try this one first
             self.player_speed = 5
+        if key == arcade.key.SPACE:
+            self.bullets.append(Bullet(self.player_x, self.player_y))
 
     def on_key_release(self, key, modifiers):
         if key == arcade.key.LEFT or key == arcade.key.RIGHT:
