@@ -17,3 +17,6 @@ class Game(arcade.Window):
 
     def on_key_release(self, key, modifiers):
         self.player.on_key_release(key, modifiers)
+
+    def on_update(self, delta_time):
+        self.player.on_update(delta_time)
