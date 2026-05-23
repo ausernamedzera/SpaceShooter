@@ -4,7 +4,10 @@ SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
 SCREEN_TITLE = "Space Shooter"
 
-class Game:
+class Game(arcade.Window):
     def __init__(self):
         super().__init__(SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_TITLE)
-        arcade.set.background_color(arcade.color.BLACK)
+        arcade.set_background_color(arcade.color.GRAY_BLUE)
+
+    def on_draw(self):
+        self.clear()
