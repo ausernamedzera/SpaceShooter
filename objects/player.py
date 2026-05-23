@@ -34,3 +34,6 @@ class Player:
             self.player_x = 20
         if self.player_x > SCREEN_WIDTH - 20:
             self.player_x = SCREEN_WIDTH - 20
+
+        for bullet in self.bullets:
+            bullet.update()
