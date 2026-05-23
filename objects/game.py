@@ -11,3 +11,6 @@ class Game(arcade.Window):
     def on_draw(self):
         self.clear()
         self.player.on_draw()
+
+    def on_key_press(self, key, modifiers):
+        self.player.on_key_press(key, modifiers)
