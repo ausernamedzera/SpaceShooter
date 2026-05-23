@@ -3,3 +3,6 @@ class Bullet:
         self.x = x
         self.y = y
         self.speed = 5
+
+    def update(self):
+        self.y += self.speed
