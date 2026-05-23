@@ -6,6 +6,7 @@ class Player:
     def __init__(self):
         self.player_x = SCREEN_WIDTH / 2
         self.player_y = 50
+        self.player_speed = 0
 
     def on_draw(self):
         arcade.draw_circle_filled(self.player_x, self.player_y, 20, arcade.color.PURPLE_HEART)
