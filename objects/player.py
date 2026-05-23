@@ -16,3 +16,7 @@ class Player:
             self.player_x -= 10
         if key == arcade.key.RIGHT:
             self.player_x += 10
+
+    def on_key_release(self, key, modifiers):
+        if key == arcade.key.LEFT or key == arcade.key.RIGHT:
+            self.player_speed = 0
