@@ -13,9 +13,9 @@ class Player:
 
     def on_key_press(self, key, modifiers):
         if key == arcade.key.LEFT:
-            self.player_x -= 5
+            self.player_speed = -5
         if key == arcade.key.RIGHT: #written with elif, I'll try this one first
-            self.player_x += 5
+            self.player_speed = 5
 
     def on_key_release(self, key, modifiers):
         if key == arcade.key.LEFT or key == arcade.key.RIGHT:
