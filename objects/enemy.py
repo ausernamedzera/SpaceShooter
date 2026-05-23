@@ -1,2 +1,1 @@
-class Enemies:
-    pass
+import arcade
