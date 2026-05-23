@@ -6,5 +6,8 @@ class Bullet:
         self.y = y
         self.speed = 5
 
-    def on_update(self):
+    def update(self):
         self.y += self.speed
+
+    def draw(self):
+        arcade.draw_circle_filled(self.x, self.y, 5, arcade.color.YELLOW)
