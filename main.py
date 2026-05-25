@@ -1,6 +1,6 @@
 from constants import SCREEN_WIDTH, SCREEN_HEIGHT
 from objects.player import Player
-from objects.enemy import Enemies
+from objects.enemy import Enemy
 from objects.game import Game
 import arcade
 
