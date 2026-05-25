@@ -22,3 +22,4 @@ class Game(arcade.Window):
 
     def on_update(self, delta_time):
         self.player.on_update(delta_time)
+        self.enemy_spawn_timer += delta_time
