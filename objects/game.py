@@ -7,6 +7,7 @@ class Game(arcade.Window):
         super().__init__(SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_TITLE)
         self.player = Player()
         self.enemies = []
+        self.enemy_spawn_timer = 0
         arcade.set_background_color(arcade.color.GRAY_BLUE)
 
     def on_draw(self):
