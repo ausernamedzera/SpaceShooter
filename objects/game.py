@@ -33,3 +33,6 @@ class Game(arcade.Window):
             x = random.randint(20, SCREEN_WIDTH - 20)
             self.enemies.append(Enemy(x, SCREEN_HEIGHT))
             self.enemy_spawn_timer = 0
+
+        for enemy in self.enemies:
+            enemy.update()
