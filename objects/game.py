@@ -1,5 +1,6 @@
 import arcade #everynew window, we need to install again using "pip install arcade --no-deps"
 from constants import SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_TITLE
+from objects.enemy import Enemy
 from objects.player import Player
 import random
 
@@ -15,6 +16,9 @@ class Game(arcade.Window):
         self.clear()
         self.player.on_draw()
 
+        for enemy in self.enemies:
+            enemy.draw()
+
     def on_key_press(self, key, modifiers):
         self.player.on_key_press(key, modifiers)
 
@@ -27,3 +31,5 @@ class Game(arcade.Window):
 
         if self.enemy_spawn_timer > 1.5:
             x = random.randint(20, SCREEN_WIDTH - 20)
+            self.enemies.append(Enemy(x, SCREEN_HEIGHT))
+            self.enemy_spawn_timer = 0
