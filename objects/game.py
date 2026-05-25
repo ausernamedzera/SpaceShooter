@@ -6,6 +6,7 @@ class Game(arcade.Window):
     def __init__(self):
         super().__init__(SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_TITLE)
         self.player = Player()
+        self.enemies = []
         arcade.set_background_color(arcade.color.GRAY_BLUE)
 
     def on_draw(self):
