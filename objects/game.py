@@ -36,3 +36,5 @@ class Game(arcade.Window):
 
         for enemy in self.enemies:
             enemy.update()
+
+        self.enemies = [e for e in self.enemies if e.y > 0]
