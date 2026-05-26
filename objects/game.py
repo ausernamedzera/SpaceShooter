@@ -38,3 +38,6 @@ class Game(arcade.Window):
             enemy.update()
 
         self.enemies = [e for e in self.enemies if e.y > 0]
+
+        for bullet in self.player.bullets[:]: #[:] creates copy of a list
+            bullet.update()
