@@ -41,3 +41,5 @@ class Game(arcade.Window):
 
         for bullet in self.player.bullets[:]: #[:] creates copy of a list
             bullet.update()
+
+        self.player.bullets = [b for b in self.player.bullets if b.y < SCREEN_HEIGHT]
