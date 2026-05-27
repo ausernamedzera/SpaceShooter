@@ -1,5 +1,6 @@
 import arcade #everynew window, we need to install again using "pip install arcade --no-deps"
 from constants import SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_TITLE
+from objects.bullet import Bullet
 from objects.enemy import Enemy
 from objects.player import Player
 import random
@@ -47,7 +48,7 @@ class Game(arcade.Window):
         #collision mechanics
         for bullet in self.player.bullets[:]:
             for enemy in self.enemies[:]:
-                if abs(bullet[0] - enemy[0]) > 20 and abs(bullet[1] - enemy[1]) > 20:
+                if abs(bullet.y - enemy.y) > 20:
                     self.player.bullets.remove(bullet)
                     self.enemies.remove(enemy)
                     break
