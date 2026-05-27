@@ -48,7 +48,7 @@ class Game(arcade.Window):
         #collision mechanics
         for bullet in self.player.bullets[:]:
             for enemy in self.enemies[:]:
-                if abs(bullet.x + enemy.x) > 20 and abs(bullet.y - enemy.y) > 20:
+                if abs(bullet.x + enemy.x) < 20 and abs(bullet.y - enemy.y) < 20:
                     self.player.bullets.remove(bullet)
                     self.enemies.remove(enemy)
                     break
