@@ -23,9 +23,9 @@ class Game(arcade.Window):
         for enemy in self.enemies:
             enemy.draw()
         if self.game_over:
-            arcade.draw_text("GAME OVER", SCREEN_WIDTH/2, SCREEN_HEIGHT/2, arcade.color.BLACK, 50)
-            arcade.draw_text("Final Score" + str(self.player.score), SCREEN_WIDTH/2, SCREEN_HEIGHT/2 - 50, arcade.color.BLACK, 25)
-            arcade.draw_text("Press R to Restart, Press ESC to Quit", SCREEN_WIDTH/2, SCREEN_HEIGHT/2 - 100, arcade.color.BLACK, 25)
+            arcade.draw_text("GAME OVER", SCREEN_WIDTH/2, SCREEN_HEIGHT/2, arcade.color.BLACK, 50, anchor_x="center")
+            arcade.draw_text("Final Score: " + str(self.player.score), SCREEN_WIDTH/2, SCREEN_HEIGHT/2 - 50, arcade.color.BLACK, 25, anchor_x="center")
+            arcade.draw_text("Press R to Restart, Press ESC to Quit", SCREEN_WIDTH/2, SCREEN_HEIGHT/2 - 100, arcade.color.BLACK, 25, anchor_x="center")
 
     def on_key_press(self, key, modifiers):
         self.player.on_key_press(key, modifiers)
