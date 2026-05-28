@@ -1,7 +1,6 @@
 import arcade #everynew window, we need to install again using "pip install arcade --no-deps"
 
 from constants import SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_TITLE
-from objects.bullet import Bullet
 from objects.enemy import Enemy
 from objects.player import Player
 import random

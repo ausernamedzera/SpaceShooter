@@ -2,7 +2,6 @@ import arcade
 from objects.bullet import Bullet
 from constants import SCREEN_WIDTH, SCREEN_HEIGHT
 
-
 class Player:
     def __init__(self):
         self.player_x = SCREEN_WIDTH / 2
