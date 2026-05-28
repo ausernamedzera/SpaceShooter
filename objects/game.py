@@ -53,3 +53,5 @@ class Game(arcade.Window):
                     self.enemies.remove(enemy)
                     self.player.score += 1
                     break
+                if enemy.y < 0:
+                    self.player.lives -= 1
