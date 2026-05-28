@@ -51,4 +51,5 @@ class Game(arcade.Window):
                 if abs(bullet.x - enemy.x) < 20 and abs(bullet.y - enemy.y) < 20:
                     self.player.bullets.remove(bullet)
                     self.enemies.remove(enemy)
+                    self.player.score += 1
                     break
