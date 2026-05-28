@@ -1,4 +1,5 @@
 import arcade #everynew window, we need to install again using "pip install arcade --no-deps"
+
 from constants import SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_TITLE
 from objects.bullet import Bullet
 from objects.enemy import Enemy
@@ -23,7 +24,8 @@ class Game(arcade.Window):
             enemy.draw()
         if self.game_over:
             arcade.draw_text("GAME OVER", SCREEN_WIDTH/2, SCREEN_HEIGHT/2, arcade.color.BLACK, 50)
-
+            arcade.draw_text("Final Score" + str(self.player.score), SCREEN_WIDTH/2, SCREEN_HEIGHT/2 - 50, arcade.color.BLACK, 25)
+            arcade.draw_text("Press R to Restart, Press ESC to Quit", SCREEN_WIDTH/2, SCREEN_HEIGHT/2 - 100, arcade.color.BLACK, 25)
 
     def on_key_press(self, key, modifiers):
         self.player.on_key_press(key, modifiers)
