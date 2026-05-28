@@ -16,6 +16,7 @@ class Game(arcade.Window):
     def on_draw(self):
         self.clear()
         self.player.on_draw()
+        arcade.text.draw_text(f"Score: {self.player.score}", 10, SCREEN_HEIGHT - 30, arcade.color.BLACK_OLIVE, 16)
 
         for enemy in self.enemies:
             enemy.draw()
@@ -59,5 +60,5 @@ class Game(arcade.Window):
             if enemy.y < 0:
                 self.player.lives -= 1
 
-        if self.player.lives >= 0:
+        if self.player.lives <= 0:
             arcade.exit()
