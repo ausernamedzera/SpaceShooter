@@ -21,6 +21,9 @@ class Game(arcade.Window):
         arcade.draw_text(f"Lives: {self.player.lives}", 10, SCREEN_HEIGHT - 50, arcade.color.RED_BROWN, 16)
         for enemy in self.enemies:
             enemy.draw()
+        if self.game_over:
+            arcade.draw_text("GAME OVER", SCREEN_WIDTH/2, SCREEN_HEIGHT/2, arcade.color.BLACK, 50)
+
 
     def on_key_press(self, key, modifiers):
         self.player.on_key_press(key, modifiers)
@@ -29,6 +32,8 @@ class Game(arcade.Window):
         self.player.on_key_release(key, modifiers)
 
     def on_update(self, delta_time):
+        if self.game_over:
+            return
         self.player.on_update(delta_time)
         self.enemy_spawn_timer += delta_time
 
@@ -60,4 +65,4 @@ class Game(arcade.Window):
                     break
 
         if self.player.lives <= 0:
-            arcade.exit()
+            self.game_over = True
