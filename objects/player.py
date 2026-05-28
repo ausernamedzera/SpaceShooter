@@ -9,6 +9,7 @@ class Player:
         self.player_y = 50
         self.player_speed = 0
         self.bullets = []
+        self.lives = 3
 
     def on_draw(self):
         arcade.draw_circle_filled(self.player_x, self.player_y, 20, arcade.color.PURPLE_HEART)
