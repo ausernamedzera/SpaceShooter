@@ -16,8 +16,8 @@ class Game(arcade.Window):
     def on_draw(self):
         self.clear()
         self.player.on_draw()
-        arcade.text.draw_text(f"Score: {self.player.score}", 10, SCREEN_HEIGHT - 30, arcade.color.BLACK_OLIVE, 16)
-
+        arcade.draw_text(f"Score: {self.player.score}", 10, SCREEN_HEIGHT - 30, arcade.color.BLACK_OLIVE, 16)
+        arcade.draw_text(f"Lives: {self.player.lives}", 10, SCREEN_HEIGHT - 50, arcade.color.RED_BROWN, 16)
         for enemy in self.enemies:
             enemy.draw()
 
@@ -39,6 +39,9 @@ class Game(arcade.Window):
         for enemy in self.enemies:
             enemy.update()
 
+        for enemy in self.enemies:
+            if enemy.y <= 0:
+                self.player.lives -= 1
         self.enemies = [e for e in self.enemies if e.y > 0]
 
         for bullet in self.player.bullets[:]: #[:] creates copy of a list
@@ -54,11 +57,6 @@ class Game(arcade.Window):
                     self.enemies.remove(enemy)
                     self.player.score += 1
                     break
-
-        survived_enemies = []
-        for enemy in self.enemies:
-            if enemy.y < 0:
-                self.player.lives -= 1
 
         if self.player.lives <= 0:
             arcade.exit()
