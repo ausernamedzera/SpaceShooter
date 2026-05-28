@@ -31,7 +31,11 @@ class Game(arcade.Window):
         self.player.on_key_press(key, modifiers)
         if self.game_over and key == arcade.key.ESCAPE:
             arcade.exit()
-
+        if self.game_over and key == arcade.key.R:
+            self.player = Player()
+            self.enemies = []
+            self.enemy_spawn_timer = 0
+            self.game_over = False
 
     def on_key_release(self, key, modifiers):
         self.player.on_key_release(key, modifiers)
