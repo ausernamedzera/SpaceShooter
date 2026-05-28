@@ -27,7 +27,8 @@ class Game(arcade.Window):
             arcade.draw_text("Press R to Restart, Press ESC to Quit", SCREEN_WIDTH/2, SCREEN_HEIGHT/2 - 100, arcade.color.BLACK, 25, anchor_x="center")
 
     def on_key_press(self, key, modifiers):
-        self.player.on_key_press(key, modifiers)
+        if not self.game_over:
+            self.player.on_key_press(key, modifiers)
         if self.game_over and key == arcade.key.ESCAPE:
             arcade.exit()
         if self.game_over and key == arcade.key.R:
